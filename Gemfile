@@ -64,3 +64,6 @@ end
 
 # Front-end framework
 gem 'bootstrap', '~> 5.3.3'
+
+# Sass engine
+gem 'dartsass-sprockets'
