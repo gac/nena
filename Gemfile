@@ -58,5 +58,9 @@ group :development do
   gem "error_highlight", ">= 0.4.0", platforms: [ :ruby ]
 end
 
+group :test do
+  gem 'shoulda-matchers', '~> 5.0'
+end
+
 # Front-end framework
 gem 'bootstrap', '~> 5.2.2'
