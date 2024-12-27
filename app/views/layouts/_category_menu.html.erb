@@ -1,0 +1,17 @@
+<!-- Category Section -->
+<div class="container py-5">
+  <div class="row">
+    <div class="col-12">
+      <ul class="nav nav-tabs nav-fill mb-4" id="category-tabs">
+        <li class="nav-item">
+          <%= link_to("All Categories", root_path, class: ("nav-link #{'active' if !@category}")) %>
+        </li>
+        <% @categories.each do |category| %>
+          <li class="nav-item">
+            <%= link_to(category.name, category_path(category), class: ("nav-link #{'active' if @category && @category.name == category.name}")) %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
