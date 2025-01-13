@@ -56,3 +56,7 @@ group :development do
   gem "web-console"
 end
 
+# Add front-end framework bootstrap
+gem "bootstrap", "~> 5.3.0"
+
+gem "dartsass-sprockets"
